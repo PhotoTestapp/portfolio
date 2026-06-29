@@ -32,9 +32,9 @@ git status --short
 
 echo
 echo "git diff"
-git diff -- prices.json data/prices_input.csv README.md index.html tools/generate_prices_json.py tools/publish_prices.sh
+git diff -- prices.json data/prices_input.csv README.md index.html tools/generate_prices_json.py tools/publish_prices.sh tools/launchd/com.phototestapp.portfolio-prices.plist tools/install_launchd.sh tools/uninstall_launchd.sh
 
-STATUS_OUTPUT="$(git status --short -- data/prices_input.csv prices.json README.md index.html tools/generate_prices_json.py tools/publish_prices.sh)"
+STATUS_OUTPUT="$(git status --short -- data/prices_input.csv prices.json README.md index.html tools/generate_prices_json.py tools/publish_prices.sh tools/launchd/com.phototestapp.portfolio-prices.plist tools/install_launchd.sh tools/uninstall_launchd.sh)"
 if [[ -z "$STATUS_OUTPUT" ]]; then
   echo "No changes to publish."
   exit 0
@@ -50,19 +50,26 @@ echo "- README.md"
 echo "- index.html"
 echo "- tools/generate_prices_json.py"
 echo "- tools/publish_prices.sh"
+echo "- tools/launchd/com.phototestapp.portfolio-prices.plist"
+echo "- tools/install_launchd.sh"
+echo "- tools/uninstall_launchd.sh"
 echo
-read -r -p "Continue? [y/N] " answer
+if [[ "${AUTO_PUBLISH:-0}" == "1" ]]; then
+  echo "AUTO_PUBLISH=1: skipping confirmation prompt."
+else
+  read -r -p "Continue? [y/N] " answer
 
-case "$answer" in
-  y|Y)
-    ;;
-  *)
-    echo "Cancelled."
-    exit 0
-    ;;
-esac
+  case "$answer" in
+    y|Y)
+      ;;
+    *)
+      echo "Cancelled."
+      exit 0
+      ;;
+  esac
+fi
 
-git add data/prices_input.csv prices.json README.md index.html tools/generate_prices_json.py tools/publish_prices.sh
+git add data/prices_input.csv prices.json README.md index.html tools/generate_prices_json.py tools/publish_prices.sh tools/launchd/com.phototestapp.portfolio-prices.plist tools/install_launchd.sh tools/uninstall_launchd.sh
 
 COMMIT_MESSAGE="Update prices.json $(TZ=Asia/Tokyo date "+%Y-%m-%d %H:%M JST")"
 git commit -m "$COMMIT_MESSAGE"
