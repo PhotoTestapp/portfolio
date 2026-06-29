@@ -16,6 +16,8 @@ FILES=(
   index.html
   tools/generate_prices_json.py
   tools/fetch_mutual_fund_prices.py
+  tools/fetch_japan_stock_prices.py
+  tools/fetch_crypto_prices.py
   tools/publish_prices.sh
   tools/launchd/com.phototestapp.portfolio-prices.plist
   tools/install_launchd.sh
@@ -27,6 +29,20 @@ if [[ "${FETCH_MUTUAL_FUNDS:-0}" == "1" ]]; then
   python3 tools/fetch_mutual_fund_prices.py
 else
   echo "FETCH_MUTUAL_FUNDS is not enabled. Skipping mutual fund fetch."
+fi
+
+if [[ "${FETCH_JAPAN_STOCKS:-0}" == "1" ]]; then
+  echo "FETCH_JAPAN_STOCKS=1: fetching Japan stock prices before generating prices.json"
+  python3 tools/fetch_japan_stock_prices.py
+else
+  echo "FETCH_JAPAN_STOCKS is not enabled. Skipping Japan stock fetch."
+fi
+
+if [[ "${FETCH_CRYPTO:-0}" == "1" ]]; then
+  echo "FETCH_CRYPTO=1: fetching crypto prices before generating prices.json"
+  python3 tools/fetch_crypto_prices.py
+else
+  echo "FETCH_CRYPTO is not enabled. Skipping crypto fetch."
 fi
 
 echo "Generating prices.json..."
@@ -70,6 +86,8 @@ echo "- README.md"
 echo "- index.html"
 echo "- tools/generate_prices_json.py"
 echo "- tools/fetch_mutual_fund_prices.py"
+echo "- tools/fetch_japan_stock_prices.py"
+echo "- tools/fetch_crypto_prices.py"
 echo "- tools/publish_prices.sh"
 echo "- tools/launchd/com.phototestapp.portfolio-prices.plist"
 echo "- tools/install_launchd.sh"

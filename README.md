@@ -106,13 +106,45 @@ Manual publish:
 bash tools/publish_prices.sh
 ```
 
+Publish with optional price fetch:
+
+Mutual funds:
+
+```bash
+FETCH_MUTUAL_FUNDS=1 bash tools/publish_prices.sh
+```
+
+Japan stocks:
+
+```bash
+FETCH_JAPAN_STOCKS=1 bash tools/publish_prices.sh
+```
+
+Crypto:
+
+```bash
+FETCH_CRYPTO=1 bash tools/publish_prices.sh
+```
+
+All supported prices:
+
+```bash
+FETCH_MUTUAL_FUNDS=1 FETCH_JAPAN_STOCKS=1 FETCH_CRYPTO=1 bash tools/publish_prices.sh
+```
+
+All supported prices without confirmation:
+
+```bash
+FETCH_MUTUAL_FUNDS=1 FETCH_JAPAN_STOCKS=1 FETCH_CRYPTO=1 AUTO_PUBLISH=1 bash tools/publish_prices.sh
+```
+
 Default behavior:
 
 ```bash
 bash tools/publish_prices.sh
 ```
 
-By default, mutual fund fetch is skipped.
+By default, all fetch steps are skipped.
 
 Publish with mutual fund auto fetch:
 
