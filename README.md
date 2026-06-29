@@ -15,7 +15,7 @@ Rules:
 - `assetType`: `mutualFund`, `japanStock`, or `crypto`
 - `price`: numeric and greater than 0
 - `currency`: `JPY`
-- `source`: `manual-csv` or `auto-mutual-fund`
+- `source`: `manual-csv`, `auto-mutual-fund`, or `auto-japan-stock`
 - `priceDate`: `YYYY-MM-DD`
 - `memo`: optional
 
@@ -53,6 +53,29 @@ memo=基準価額 自動取得
 ```
 
 If a fund fetch fails, the existing CSV value is kept.
+
+Fetch Japan stock prices manually:
+
+```bash
+python3 tools/fetch_japan_stock_prices.py
+```
+
+This updates only `japanStock` rows in `data/prices_input.csv`.
+
+Source:
+
+```text
+Yahoo! Finance Japan quote pages
+```
+
+Successful rows use:
+
+```text
+source=auto-japan-stock
+memo=株価 自動取得
+```
+
+If a stock fetch fails, the existing CSV value is kept.
 
 Manual publish:
 

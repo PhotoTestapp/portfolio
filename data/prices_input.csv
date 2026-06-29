@@ -5,10 +5,10 @@ code,name,assetType,price,currency,source,priceDate,memo
 01313098,野村世界業種別投資シリーズ（世界半導体株投資）,mutualFund,379244,JPY,auto-mutual-fund,2026-06-26,基準価額 自動取得
 4731299C,DLIBJ公社債オープン（中期コース）,mutualFund,8828,JPY,auto-mutual-fund,2026-06-26,基準価額 自動取得
 AJ312217,Smart-i ゴールドファンド（為替ヘッジあり）,mutualFund,17066,JPY,auto-mutual-fund,2026-06-26,基準価額 自動取得
-9432,NTT,japanStock,151.2,JPY,manual-csv,2026-06-29,終値または手入力価格
-8410,セブン銀行,japanStock,300,JPY,manual-csv,2026-06-29,終値または手入力価格
-6857,アドバンテスト,japanStock,30970,JPY,manual-csv,2026-06-29,終値または手入力価格
-7741,HOYA,japanStock,19800,JPY,manual-csv,2026-06-29,終値または手入力価格
+9432,NTT,japanStock,146,JPY,auto-japan-stock,2026-06-29,株価 自動取得
+8410,セブン銀行,japanStock,280.7,JPY,auto-japan-stock,2026-06-29,株価 自動取得
+6857,アドバンテスト,japanStock,31950,JPY,auto-japan-stock,2026-06-29,株価 自動取得
+7741,HOYA,japanStock,25805,JPY,auto-japan-stock,2026-06-29,株価 自動取得
 BTC,Bitcoin,crypto,9616420,JPY,manual-csv,2026-06-29,JPY価格
 ETH,Ethereum,crypto,253277.9531,JPY,manual-csv,2026-06-29,JPY価格
 XRP,XRP,crypto,350,JPY,manual-csv,2026-06-29,JPY価格

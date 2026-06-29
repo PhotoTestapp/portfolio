@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-29T21:45:51+09:00",
+  "asOf": "2026-06-29T21:55:57+09:00",
   "prices": {
     "03311187": {
       "name": "eMAXIS Slim 米国株式（S&P500）",
@@ -51,35 +51,35 @@
     },
     "9432": {
       "name": "NTT",
-      "price": 151.2,
+      "price": 146,
       "currency": "JPY",
-      "source": "manual-csv",
+      "source": "auto-japan-stock",
       "priceDate": "2026-06-29",
-      "memo": "終値または手入力価格"
+      "memo": "株価 自動取得"
     },
     "8410": {
       "name": "セブン銀行",
-      "price": 300,
+      "price": 280.7,
       "currency": "JPY",
-      "source": "manual-csv",
+      "source": "auto-japan-stock",
       "priceDate": "2026-06-29",
-      "memo": "終値または手入力価格"
+      "memo": "株価 自動取得"
     },
     "6857": {
       "name": "アドバンテスト",
-      "price": 30970,
+      "price": 31950,
       "currency": "JPY",
-      "source": "manual-csv",
+      "source": "auto-japan-stock",
       "priceDate": "2026-06-29",
-      "memo": "終値または手入力価格"
+      "memo": "株価 自動取得"
     },
     "7741": {
       "name": "HOYA",
-      "price": 19800,
+      "price": 25805,
       "currency": "JPY",
-      "source": "manual-csv",
+      "source": "auto-japan-stock",
       "priceDate": "2026-06-29",
-      "memo": "終値または手入力価格"
+      "memo": "株価 自動取得"
     },
     "BTC": {
       "name": "Bitcoin",
