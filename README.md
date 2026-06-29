@@ -60,6 +60,26 @@ Manual publish:
 bash tools/publish_prices.sh
 ```
 
+Default behavior:
+
+```bash
+bash tools/publish_prices.sh
+```
+
+By default, mutual fund fetch is skipped.
+
+Publish with mutual fund auto fetch:
+
+```bash
+FETCH_MUTUAL_FUNDS=1 bash tools/publish_prices.sh
+```
+
+Auto publish without confirmation:
+
+```bash
+FETCH_MUTUAL_FUNDS=1 AUTO_PUBLISH=1 bash tools/publish_prices.sh
+```
+
 Auto publish on Mac mini:
 
 ```bash

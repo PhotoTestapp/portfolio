@@ -9,6 +9,26 @@ fi
 
 cd "$ROOT"
 
+FILES=(
+  data/prices_input.csv
+  prices.json
+  README.md
+  index.html
+  tools/generate_prices_json.py
+  tools/fetch_mutual_fund_prices.py
+  tools/publish_prices.sh
+  tools/launchd/com.phototestapp.portfolio-prices.plist
+  tools/install_launchd.sh
+  tools/uninstall_launchd.sh
+)
+
+if [[ "${FETCH_MUTUAL_FUNDS:-0}" == "1" ]]; then
+  echo "FETCH_MUTUAL_FUNDS=1: fetching mutual fund prices before generating prices.json"
+  python3 tools/fetch_mutual_fund_prices.py
+else
+  echo "FETCH_MUTUAL_FUNDS is not enabled. Skipping mutual fund fetch."
+fi
+
 echo "Generating prices.json..."
 python3 tools/generate_prices_json.py
 
@@ -32,9 +52,9 @@ git status --short
 
 echo
 echo "git diff"
-git diff -- prices.json data/prices_input.csv README.md index.html tools/generate_prices_json.py tools/publish_prices.sh tools/launchd/com.phototestapp.portfolio-prices.plist tools/install_launchd.sh tools/uninstall_launchd.sh
+git diff -- "${FILES[@]}"
 
-STATUS_OUTPUT="$(git status --short -- data/prices_input.csv prices.json README.md index.html tools/generate_prices_json.py tools/publish_prices.sh tools/launchd/com.phototestapp.portfolio-prices.plist tools/install_launchd.sh tools/uninstall_launchd.sh)"
+STATUS_OUTPUT="$(git status --short -- "${FILES[@]}")"
 if [[ -z "$STATUS_OUTPUT" ]]; then
   echo "No changes to publish."
   exit 0
@@ -49,6 +69,7 @@ echo "- prices.json"
 echo "- README.md"
 echo "- index.html"
 echo "- tools/generate_prices_json.py"
+echo "- tools/fetch_mutual_fund_prices.py"
 echo "- tools/publish_prices.sh"
 echo "- tools/launchd/com.phototestapp.portfolio-prices.plist"
 echo "- tools/install_launchd.sh"
@@ -69,7 +90,11 @@ else
   esac
 fi
 
-git add data/prices_input.csv prices.json README.md index.html tools/generate_prices_json.py tools/publish_prices.sh tools/launchd/com.phototestapp.portfolio-prices.plist tools/install_launchd.sh tools/uninstall_launchd.sh
+for file in "${FILES[@]}"; do
+  if [[ -e "$file" ]]; then
+    git add "$file"
+  fi
+done
 
 COMMIT_MESSAGE="Update prices.json $(TZ=Asia/Tokyo date "+%Y-%m-%d %H:%M JST")"
 git commit -m "$COMMIT_MESSAGE"
