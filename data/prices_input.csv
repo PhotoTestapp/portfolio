@@ -1,10 +1,10 @@
 code,name,assetType,price,currency,source,priceDate,memo
-03311187,eMAXIS Slim 米国株式（S&P500）,mutualFund,33000,JPY,manual-csv,2026-06-29,基準価額
-0331418A,eMAXIS Slim 全世界株式（オール・カントリー）,mutualFund,30000,JPY,manual-csv,2026-06-29,基準価額
-29313233,ニッセイNASDAQ100インデックスファンド,mutualFund,24000,JPY,manual-csv,2026-06-29,基準価額
-01313098,野村世界業種別投資シリーズ（世界半導体株投資）,mutualFund,56000,JPY,manual-csv,2026-06-29,基準価額
-4731299C,DLIBJ公社債オープン（中期コース）,mutualFund,10500,JPY,manual-csv,2026-06-29,基準価額
-AJ312217,Smart-i ゴールドファンド（為替ヘッジあり）,mutualFund,13500,JPY,manual-csv,2026-06-29,基準価額
+03311187,eMAXIS Slim 米国株式（S&P500）,mutualFund,43772,JPY,auto-mutual-fund,2026-06-26,基準価額 自動取得
+0331418A,eMAXIS Slim 全世界株式（オール・カントリー）,mutualFund,37729,JPY,auto-mutual-fund,2026-06-26,基準価額 自動取得
+29313233,ニッセイNASDAQ100インデックスファンド,mutualFund,28422,JPY,auto-mutual-fund,2026-06-26,基準価額 自動取得
+01313098,野村世界業種別投資シリーズ（世界半導体株投資）,mutualFund,379244,JPY,auto-mutual-fund,2026-06-26,基準価額 自動取得
+4731299C,DLIBJ公社債オープン（中期コース）,mutualFund,8828,JPY,auto-mutual-fund,2026-06-26,基準価額 自動取得
+AJ312217,Smart-i ゴールドファンド（為替ヘッジあり）,mutualFund,17066,JPY,auto-mutual-fund,2026-06-26,基準価額 自動取得
 9432,NTT,japanStock,151.2,JPY,manual-csv,2026-06-29,終値または手入力価格
 8410,セブン銀行,japanStock,300,JPY,manual-csv,2026-06-29,終値または手入力価格
 6857,アドバンテスト,japanStock,30970,JPY,manual-csv,2026-06-29,終値または手入力価格

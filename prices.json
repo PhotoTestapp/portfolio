@@ -1,53 +1,53 @@
 {
-  "asOf": "2026-06-29T20:59:56+09:00",
+  "asOf": "2026-06-29T21:18:43+09:00",
   "prices": {
     "03311187": {
       "name": "eMAXIS Slim 米国株式（S&P500）",
-      "price": 33000,
+      "price": 43772,
       "currency": "JPY",
-      "source": "manual-csv",
-      "priceDate": "2026-06-29",
-      "memo": "基準価額"
+      "source": "auto-mutual-fund",
+      "priceDate": "2026-06-26",
+      "memo": "基準価額 自動取得"
     },
     "0331418A": {
       "name": "eMAXIS Slim 全世界株式（オール・カントリー）",
-      "price": 30000,
+      "price": 37729,
       "currency": "JPY",
-      "source": "manual-csv",
-      "priceDate": "2026-06-29",
-      "memo": "基準価額"
+      "source": "auto-mutual-fund",
+      "priceDate": "2026-06-26",
+      "memo": "基準価額 自動取得"
     },
     "29313233": {
       "name": "ニッセイNASDAQ100インデックスファンド",
-      "price": 24000,
+      "price": 28422,
       "currency": "JPY",
-      "source": "manual-csv",
-      "priceDate": "2026-06-29",
-      "memo": "基準価額"
+      "source": "auto-mutual-fund",
+      "priceDate": "2026-06-26",
+      "memo": "基準価額 自動取得"
     },
     "01313098": {
       "name": "野村世界業種別投資シリーズ（世界半導体株投資）",
-      "price": 56000,
+      "price": 379244,
       "currency": "JPY",
-      "source": "manual-csv",
-      "priceDate": "2026-06-29",
-      "memo": "基準価額"
+      "source": "auto-mutual-fund",
+      "priceDate": "2026-06-26",
+      "memo": "基準価額 自動取得"
     },
     "4731299C": {
       "name": "DLIBJ公社債オープン（中期コース）",
-      "price": 10500,
+      "price": 8828,
       "currency": "JPY",
-      "source": "manual-csv",
-      "priceDate": "2026-06-29",
-      "memo": "基準価額"
+      "source": "auto-mutual-fund",
+      "priceDate": "2026-06-26",
+      "memo": "基準価額 自動取得"
     },
     "AJ312217": {
       "name": "Smart-i ゴールドファンド（為替ヘッジあり）",
-      "price": 13500,
+      "price": 17066,
       "currency": "JPY",
-      "source": "manual-csv",
-      "priceDate": "2026-06-29",
-      "memo": "基準価額"
+      "source": "auto-mutual-fund",
+      "priceDate": "2026-06-26",
+      "memo": "基準価額 自動取得"
     },
     "9432": {
       "name": "NTT",

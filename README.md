@@ -15,7 +15,7 @@ Rules:
 - `assetType`: `mutualFund`, `japanStock`, or `crypto`
 - `price`: numeric and greater than 0
 - `currency`: `JPY`
-- `source`: `manual-csv`
+- `source`: `manual-csv` or `auto-mutual-fund`
 - `priceDate`: `YYYY-MM-DD`
 - `memo`: optional
 
@@ -24,6 +24,35 @@ Generate:
 ```bash
 python3 tools/generate_prices_json.py
 ```
+
+Fetch mutual fund prices manually:
+
+```bash
+python3 tools/fetch_mutual_fund_prices.py
+```
+
+This updates only `mutualFund` rows in `data/prices_input.csv`.
+
+Primary source:
+
+```text
+WealthAdvisor Yahoo fund snapshot
+```
+
+Fallback:
+
+```text
+Yahoo! Finance quote page
+```
+
+Successful rows use:
+
+```text
+source=auto-mutual-fund
+memo=基準価額 自動取得
+```
+
+If a fund fetch fails, the existing CSV value is kept.
 
 Manual publish:
 
