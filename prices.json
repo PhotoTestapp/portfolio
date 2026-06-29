@@ -1,0 +1,95 @@
+{
+  "asOf": "2026-06-29T12:08:07+09:00",
+  "prices": {
+    "03311187": {
+      "name": "eMAXIS Slim 米国株式（S&P500）",
+      "price": 33000,
+      "currency": "JPY",
+      "source": "manual-seed"
+    },
+    "0331418A": {
+      "name": "eMAXIS Slim 全世界株式（オール・カントリー）",
+      "price": 30000,
+      "currency": "JPY",
+      "source": "manual-seed"
+    },
+    "29313233": {
+      "name": "ニッセイNASDAQ100インデックスファンド",
+      "price": 24000,
+      "currency": "JPY",
+      "source": "manual-seed"
+    },
+    "01313098": {
+      "name": "野村世界業種別投資シリーズ（世界半導体株投資）",
+      "price": 56000,
+      "currency": "JPY",
+      "source": "manual-seed"
+    },
+    "4731299C": {
+      "name": "DLIBJ公社債オープン（中期コース）",
+      "price": 10500,
+      "currency": "JPY",
+      "source": "manual-seed"
+    },
+    "AJ312217": {
+      "name": "Smart-i ゴールドファンド（為替ヘッジあり）",
+      "price": 13500,
+      "currency": "JPY",
+      "source": "manual-seed"
+    },
+    "9432": {
+      "name": "NTT",
+      "price": 151.2,
+      "currency": "JPY",
+      "source": "manual-seed"
+    },
+    "8410": {
+      "name": "セブン銀行",
+      "price": 300,
+      "currency": "JPY",
+      "source": "manual-seed"
+    },
+    "6857": {
+      "name": "アドバンテスト",
+      "price": 9800,
+      "currency": "JPY",
+      "source": "manual-seed"
+    },
+    "7741": {
+      "name": "HOYA",
+      "price": 19000,
+      "currency": "JPY",
+      "source": "manual-seed"
+    },
+    "BTC": {
+      "name": "Bitcoin",
+      "price": 9616420,
+      "currency": "JPY",
+      "source": "manual-seed"
+    },
+    "ETH": {
+      "name": "Ethereum",
+      "price": 540000,
+      "currency": "JPY",
+      "source": "manual-seed"
+    },
+    "XRP": {
+      "name": "XRP",
+      "price": 360,
+      "currency": "JPY",
+      "source": "manual-seed"
+    },
+    "SOL": {
+      "name": "Solana",
+      "price": 24000,
+      "currency": "JPY",
+      "source": "manual-seed"
+    },
+    "DOGE": {
+      "name": "Dogecoin",
+      "price": 25,
+      "currency": "JPY",
+      "source": "manual-seed"
+    }
+  }
+}
