@@ -207,6 +207,26 @@ Japan stocks:
 FETCH_JAPAN_STOCKS=1 bash tools/publish_prices.sh
 ```
 
+US stocks:
+
+```bash
+FETCH_US_STOCKS=1 bash tools/publish_prices.sh
+```
+
+This runs:
+
+```bash
+python3 tools/fetch_us_stock_prices.py
+```
+
+It reads `usStock` rows from `data/price_universe.csv` and updates/appends successful rows in `data/prices_input.csv` with:
+
+```text
+source=auto-us-stock
+currency=USD
+memo=株価 自動取得
+```
+
 Crypto:
 
 ```bash
@@ -216,13 +236,13 @@ FETCH_CRYPTO=1 bash tools/publish_prices.sh
 All supported prices:
 
 ```bash
-FETCH_MUTUAL_FUNDS=1 FETCH_JAPAN_STOCKS=1 FETCH_CRYPTO=1 bash tools/publish_prices.sh
+FETCH_MUTUAL_FUNDS=1 FETCH_JAPAN_STOCKS=1 FETCH_US_STOCKS=1 FETCH_CRYPTO=1 bash tools/publish_prices.sh
 ```
 
 All supported prices without confirmation:
 
 ```bash
-FETCH_MUTUAL_FUNDS=1 FETCH_JAPAN_STOCKS=1 FETCH_CRYPTO=1 AUTO_PUBLISH=1 bash tools/publish_prices.sh
+FETCH_MUTUAL_FUNDS=1 FETCH_JAPAN_STOCKS=1 FETCH_US_STOCKS=1 FETCH_CRYPTO=1 AUTO_PUBLISH=1 bash tools/publish_prices.sh
 ```
 
 Default behavior:

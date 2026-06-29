@@ -17,6 +17,7 @@ FILES=(
   tools/generate_prices_json.py
   tools/fetch_mutual_fund_prices.py
   tools/fetch_japan_stock_prices.py
+  tools/fetch_us_stock_prices.py
   tools/fetch_crypto_prices.py
   tools/publish_prices.sh
   tools/launchd/com.phototestapp.portfolio-prices.plist
@@ -36,6 +37,13 @@ if [[ "${FETCH_JAPAN_STOCKS:-0}" == "1" ]]; then
   python3 tools/fetch_japan_stock_prices.py
 else
   echo "FETCH_JAPAN_STOCKS is not enabled. Skipping Japan stock fetch."
+fi
+
+if [[ "${FETCH_US_STOCKS:-0}" == "1" ]]; then
+  echo "FETCH_US_STOCKS=1: fetching US stock prices before generating prices.json"
+  python3 tools/fetch_us_stock_prices.py
+else
+  echo "FETCH_US_STOCKS is not enabled. Skipping US stock fetch."
 fi
 
 if [[ "${FETCH_CRYPTO:-0}" == "1" ]]; then
@@ -87,6 +95,7 @@ echo "- index.html"
 echo "- tools/generate_prices_json.py"
 echo "- tools/fetch_mutual_fund_prices.py"
 echo "- tools/fetch_japan_stock_prices.py"
+echo "- tools/fetch_us_stock_prices.py"
 echo "- tools/fetch_crypto_prices.py"
 echo "- tools/publish_prices.sh"
 echo "- tools/launchd/com.phototestapp.portfolio-prices.plist"
