@@ -89,8 +89,18 @@ bash tools/install_launchd.sh
 This installs `com.phototestapp.portfolio-prices` to `~/Library/LaunchAgents` and runs:
 
 ```bash
-AUTO_PUBLISH=1 bash tools/publish_prices.sh
+FETCH_MUTUAL_FUNDS=1 AUTO_PUBLISH=1 bash tools/publish_prices.sh
 ```
+
+Daily launchd job:
+
+The daily launchd job runs:
+
+```bash
+FETCH_MUTUAL_FUNDS=1 AUTO_PUBLISH=1 bash tools/publish_prices.sh
+```
+
+This fetches mutual fund prices before generating and publishing `prices.json`.
 
 Schedule:
 
