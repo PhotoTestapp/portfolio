@@ -1,95 +1,95 @@
 {
-  "asOf": "2026-06-29T12:08:07+09:00",
+  "asOf": "2026-06-29T16:01:53+09:00",
   "prices": {
     "03311187": {
       "name": "eMAXIS Slim 米国株式（S&P500）",
       "price": 33000,
       "currency": "JPY",
-      "source": "manual-seed"
+      "source": "manual-csv"
     },
     "0331418A": {
       "name": "eMAXIS Slim 全世界株式（オール・カントリー）",
       "price": 30000,
       "currency": "JPY",
-      "source": "manual-seed"
+      "source": "manual-csv"
     },
     "29313233": {
       "name": "ニッセイNASDAQ100インデックスファンド",
       "price": 24000,
       "currency": "JPY",
-      "source": "manual-seed"
+      "source": "manual-csv"
     },
     "01313098": {
       "name": "野村世界業種別投資シリーズ（世界半導体株投資）",
       "price": 56000,
       "currency": "JPY",
-      "source": "manual-seed"
+      "source": "manual-csv"
     },
     "4731299C": {
       "name": "DLIBJ公社債オープン（中期コース）",
       "price": 10500,
       "currency": "JPY",
-      "source": "manual-seed"
+      "source": "manual-csv"
     },
     "AJ312217": {
       "name": "Smart-i ゴールドファンド（為替ヘッジあり）",
       "price": 13500,
       "currency": "JPY",
-      "source": "manual-seed"
+      "source": "manual-csv"
     },
     "9432": {
       "name": "NTT",
       "price": 151.2,
       "currency": "JPY",
-      "source": "manual-seed"
+      "source": "manual-csv"
     },
     "8410": {
       "name": "セブン銀行",
       "price": 300,
       "currency": "JPY",
-      "source": "manual-seed"
+      "source": "manual-csv"
     },
     "6857": {
       "name": "アドバンテスト",
-      "price": 9800,
+      "price": 30970,
       "currency": "JPY",
-      "source": "manual-seed"
+      "source": "manual-csv"
     },
     "7741": {
       "name": "HOYA",
-      "price": 19000,
+      "price": 19800,
       "currency": "JPY",
-      "source": "manual-seed"
+      "source": "manual-csv"
     },
     "BTC": {
       "name": "Bitcoin",
       "price": 9616420,
       "currency": "JPY",
-      "source": "manual-seed"
+      "source": "manual-csv"
     },
     "ETH": {
       "name": "Ethereum",
-      "price": 540000,
+      "price": 253277.9531,
       "currency": "JPY",
-      "source": "manual-seed"
+      "source": "manual-csv"
     },
     "XRP": {
       "name": "XRP",
-      "price": 360,
+      "price": 350,
       "currency": "JPY",
-      "source": "manual-seed"
+      "source": "manual-csv"
     },
     "SOL": {
       "name": "Solana",
-      "price": 24000,
+      "price": 22500,
       "currency": "JPY",
-      "source": "manual-seed"
+      "source": "manual-csv"
     },
     "DOGE": {
       "name": "Dogecoin",
-      "price": 25,
+      "price": 28,
       "currency": "JPY",
-      "source": "manual-seed"
+      "source": "manual-csv"
     }
   }
 }
