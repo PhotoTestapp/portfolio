@@ -18,6 +18,8 @@ from __future__ import annotations
 
 import json
 import csv
+import math
+import re
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -25,9 +27,11 @@ from zoneinfo import ZoneInfo
 
 INPUT_PATH = Path("data/prices_input.csv")
 OUTPUT_PATH = Path("prices.json")
-EXPECTED_COLUMNS = ["code", "name", "assetType", "price", "currency", "source"]
+EXPECTED_COLUMNS = ["code", "name", "assetType", "price", "currency", "source", "priceDate", "memo"]
 ALLOWED_ASSET_TYPES = {"mutualFund", "japanStock", "crypto"}
+ALLOWED_SOURCES = {"manual-csv"}
 EXPECTED_COUNTS = {"mutualFund": 6, "japanStock": 4, "crypto": 5}
+PRICE_DATE_PATTERN = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 def current_tokyo_timestamp() -> str:
@@ -46,13 +50,30 @@ def normalize_code(value: str) -> str:
 
 
 def parse_price(value: str, line_number: int):
+    if not value.strip():
+        raise ValueError(f"line {line_number}: price is required")
     try:
         price = float(value)
     except ValueError as exc:
         raise ValueError(f"line {line_number}: price must be numeric") from exc
+    if not math.isfinite(price):
+        raise ValueError(f"line {line_number}: price must be finite")
     if price <= 0:
         raise ValueError(f"line {line_number}: price must be greater than 0")
     return int(price) if price.is_integer() else price
+
+
+def parse_price_date(value: str, line_number: int) -> str:
+    price_date = value.strip()
+    if not price_date:
+        raise ValueError(f"line {line_number}: priceDate is required")
+    if not PRICE_DATE_PATTERN.fullmatch(price_date):
+        raise ValueError(f"line {line_number}: priceDate must be YYYY-MM-DD")
+    try:
+        datetime.strptime(price_date, "%Y-%m-%d")
+    except ValueError as exc:
+        raise ValueError(f"line {line_number}: priceDate is not a valid date") from exc
+    return price_date
 
 
 def load_price_rows() -> list[dict]:
@@ -71,8 +92,11 @@ def load_price_rows() -> list[dict]:
             normalized_code = normalize_code(raw_code)
             name = (row.get("name") or "").strip()
             asset_type = (row.get("assetType") or "").strip()
+            price_text = (row.get("price") or "").strip()
             currency = (row.get("currency") or "").strip()
             source = (row.get("source") or "").strip()
+            price_date = (row.get("priceDate") or "").strip()
+            memo = (row.get("memo") or "").strip()
 
             if not raw_code:
                 raise ValueError(f"line {line_number}: code is required")
@@ -80,12 +104,22 @@ def load_price_rows() -> list[dict]:
                 raise ValueError(f"line {line_number}: normalized code is empty")
             if not name:
                 raise ValueError(f"line {line_number}: name is required")
+            if not asset_type:
+                raise ValueError(f"line {line_number}: assetType is required")
             if asset_type not in ALLOWED_ASSET_TYPES:
                 raise ValueError(f"line {line_number}: assetType must be mutualFund / japanStock / crypto")
+            if not price_text:
+                raise ValueError(f"line {line_number}: price is required")
+            price = parse_price(price_text, line_number)
+            if not currency:
+                raise ValueError(f"line {line_number}: currency is required")
             if currency != "JPY":
                 raise ValueError(f"line {line_number}: currency must be JPY")
             if not source:
                 raise ValueError(f"line {line_number}: source is required")
+            if source not in ALLOWED_SOURCES:
+                raise ValueError(f"line {line_number}: source must be manual-csv")
+            parsed_price_date = parse_price_date(price_date, line_number)
             if raw_code in seen_raw_codes:
                 raise ValueError(f"line {line_number}: duplicate code {raw_code}")
             if normalized_code in seen_normalized_codes:
@@ -97,9 +131,11 @@ def load_price_rows() -> list[dict]:
                 "code": normalized_code,
                 "name": name,
                 "assetType": asset_type,
-                "price": parse_price(row.get("price") or "", line_number),
+                "price": price,
                 "currency": currency,
                 "source": source,
+                "priceDate": parsed_price_date,
+                "memo": memo,
             })
     return rows
 
@@ -111,6 +147,8 @@ def build_payload(rows: list[dict]) -> dict:
             "price": row["price"],
             "currency": row["currency"],
             "source": row["source"],
+            "priceDate": row["priceDate"],
+            "memo": row["memo"],
         }
         for row in rows
     }
@@ -132,12 +170,15 @@ def validate_payload(payload: dict, rows: list[dict]) -> dict[str, int]:
         price = item.get("price")
         if not isinstance(price, (int, float)):
             raise ValueError(f"{code}: price must be numeric")
+        if not math.isfinite(price):
+            raise ValueError(f"{code}: price must be finite")
         if price <= 0:
             raise ValueError(f"{code}: price must be greater than 0")
         if item.get("currency") != "JPY":
             raise ValueError(f"{code}: currency must be JPY")
-        if not item.get("source"):
-            raise ValueError(f"{code}: source is required")
+        if item.get("source") != "manual-csv":
+            raise ValueError(f"{code}: source must be manual-csv")
+        parse_price_date(str(item.get("priceDate", "")), 0)
     counts = {asset_type: 0 for asset_type in EXPECTED_COUNTS}
     for row in rows:
         counts[row["assetType"]] += 1

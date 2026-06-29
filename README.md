@@ -4,6 +4,21 @@ Portfolio App price JSON hosting files.
 
 `prices.json` is generated from `data/prices_input.csv`.
 
+CSV format:
+
+```csv
+code,name,assetType,price,currency,source,priceDate,memo
+```
+
+Rules:
+
+- `assetType`: `mutualFund`, `japanStock`, or `crypto`
+- `price`: numeric and greater than 0
+- `currency`: `JPY`
+- `source`: `manual-csv`
+- `priceDate`: `YYYY-MM-DD`
+- `memo`: optional
+
 Generate:
 
 ```bash

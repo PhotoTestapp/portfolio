@@ -1,95 +1,125 @@
 {
-  "asOf": "2026-06-29T20:43:27+09:00",
+  "asOf": "2026-06-29T20:59:56+09:00",
   "prices": {
     "03311187": {
       "name": "eMAXIS Slim 米国株式（S&P500）",
       "price": 33000,
       "currency": "JPY",
-      "source": "manual-csv"
+      "source": "manual-csv",
+      "priceDate": "2026-06-29",
+      "memo": "基準価額"
     },
     "0331418A": {
       "name": "eMAXIS Slim 全世界株式（オール・カントリー）",
       "price": 30000,
       "currency": "JPY",
-      "source": "manual-csv"
+      "source": "manual-csv",
+      "priceDate": "2026-06-29",
+      "memo": "基準価額"
     },
     "29313233": {
       "name": "ニッセイNASDAQ100インデックスファンド",
       "price": 24000,
       "currency": "JPY",
-      "source": "manual-csv"
+      "source": "manual-csv",
+      "priceDate": "2026-06-29",
+      "memo": "基準価額"
     },
     "01313098": {
       "name": "野村世界業種別投資シリーズ（世界半導体株投資）",
       "price": 56000,
       "currency": "JPY",
-      "source": "manual-csv"
+      "source": "manual-csv",
+      "priceDate": "2026-06-29",
+      "memo": "基準価額"
     },
     "4731299C": {
       "name": "DLIBJ公社債オープン（中期コース）",
       "price": 10500,
       "currency": "JPY",
-      "source": "manual-csv"
+      "source": "manual-csv",
+      "priceDate": "2026-06-29",
+      "memo": "基準価額"
     },
     "AJ312217": {
       "name": "Smart-i ゴールドファンド（為替ヘッジあり）",
       "price": 13500,
       "currency": "JPY",
-      "source": "manual-csv"
+      "source": "manual-csv",
+      "priceDate": "2026-06-29",
+      "memo": "基準価額"
     },
     "9432": {
       "name": "NTT",
       "price": 151.2,
       "currency": "JPY",
-      "source": "manual-csv"
+      "source": "manual-csv",
+      "priceDate": "2026-06-29",
+      "memo": "終値または手入力価格"
     },
     "8410": {
       "name": "セブン銀行",
       "price": 300,
       "currency": "JPY",
-      "source": "manual-csv"
+      "source": "manual-csv",
+      "priceDate": "2026-06-29",
+      "memo": "終値または手入力価格"
     },
     "6857": {
       "name": "アドバンテスト",
       "price": 30970,
       "currency": "JPY",
-      "source": "manual-csv"
+      "source": "manual-csv",
+      "priceDate": "2026-06-29",
+      "memo": "終値または手入力価格"
     },
     "7741": {
       "name": "HOYA",
       "price": 19800,
       "currency": "JPY",
-      "source": "manual-csv"
+      "source": "manual-csv",
+      "priceDate": "2026-06-29",
+      "memo": "終値または手入力価格"
     },
     "BTC": {
       "name": "Bitcoin",
       "price": 9616420,
       "currency": "JPY",
-      "source": "manual-csv"
+      "source": "manual-csv",
+      "priceDate": "2026-06-29",
+      "memo": "JPY価格"
     },
     "ETH": {
       "name": "Ethereum",
       "price": 253277.9531,
       "currency": "JPY",
-      "source": "manual-csv"
+      "source": "manual-csv",
+      "priceDate": "2026-06-29",
+      "memo": "JPY価格"
     },
     "XRP": {
       "name": "XRP",
       "price": 350,
       "currency": "JPY",
-      "source": "manual-csv"
+      "source": "manual-csv",
+      "priceDate": "2026-06-29",
+      "memo": "JPY価格"
     },
     "SOL": {
       "name": "Solana",
       "price": 22500,
       "currency": "JPY",
-      "source": "manual-csv"
+      "source": "manual-csv",
+      "priceDate": "2026-06-29",
+      "memo": "JPY価格"
     },
     "DOGE": {
       "name": "Dogecoin",
       "price": 28,
       "currency": "JPY",
-      "source": "manual-csv"
+      "source": "manual-csv",
+      "priceDate": "2026-06-29",
+      "memo": "JPY価格"
     }
   }
 }
