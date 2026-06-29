@@ -15,7 +15,7 @@ Rules:
 - `assetType`: `mutualFund`, `japanStock`, or `crypto`
 - `price`: numeric and greater than 0
 - `currency`: `JPY`
-- `source`: `manual-csv`, `auto-mutual-fund`, or `auto-japan-stock`
+- `source`: `manual-csv`, `auto-mutual-fund`, `auto-japan-stock`, or `auto-crypto`
 - `priceDate`: `YYYY-MM-DD`
 - `memo`: optional
 
@@ -76,6 +76,29 @@ memo=株価 自動取得
 ```
 
 If a stock fetch fails, the existing CSV value is kept.
+
+Fetch crypto prices manually:
+
+```bash
+python3 tools/fetch_crypto_prices.py
+```
+
+This updates only `crypto` rows in `data/prices_input.csv`.
+
+Source:
+
+```text
+CoinGecko Simple Price API
+```
+
+Successful rows use:
+
+```text
+source=auto-crypto
+memo=JPY価格 自動取得
+```
+
+If a crypto fetch fails, the existing CSV value is kept.
 
 Manual publish:
 

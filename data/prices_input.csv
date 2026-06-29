@@ -9,8 +9,8 @@ AJ312217,Smart-i ゴールドファンド（為替ヘッジあり）,mutualFund,
 8410,セブン銀行,japanStock,280.7,JPY,auto-japan-stock,2026-06-29,株価 自動取得
 6857,アドバンテスト,japanStock,31950,JPY,auto-japan-stock,2026-06-29,株価 自動取得
 7741,HOYA,japanStock,25805,JPY,auto-japan-stock,2026-06-29,株価 自動取得
-BTC,Bitcoin,crypto,9616420,JPY,manual-csv,2026-06-29,JPY価格
-ETH,Ethereum,crypto,253277.9531,JPY,manual-csv,2026-06-29,JPY価格
-XRP,XRP,crypto,350,JPY,manual-csv,2026-06-29,JPY価格
-SOL,Solana,crypto,22500,JPY,manual-csv,2026-06-29,JPY価格
-DOGE,Dogecoin,crypto,28,JPY,manual-csv,2026-06-29,JPY価格
+BTC,Bitcoin,crypto,9716175,JPY,auto-crypto,2026-06-29,JPY価格 自動取得
+ETH,Ethereum,crypto,255638,JPY,auto-crypto,2026-06-29,JPY価格 自動取得
+XRP,XRP,crypto,171.01,JPY,auto-crypto,2026-06-29,JPY価格 自動取得
+SOL,Solana,crypto,11926.52,JPY,auto-crypto,2026-06-29,JPY価格 自動取得
+DOGE,Dogecoin,crypto,11.82,JPY,auto-crypto,2026-06-29,JPY価格 自動取得

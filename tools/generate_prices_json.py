@@ -29,7 +29,7 @@ INPUT_PATH = Path("data/prices_input.csv")
 OUTPUT_PATH = Path("prices.json")
 EXPECTED_COLUMNS = ["code", "name", "assetType", "price", "currency", "source", "priceDate", "memo"]
 ALLOWED_ASSET_TYPES = {"mutualFund", "japanStock", "crypto"}
-ALLOWED_SOURCES = {"manual-csv", "auto-mutual-fund", "auto-japan-stock"}
+ALLOWED_SOURCES = {"manual-csv", "auto-mutual-fund", "auto-japan-stock", "auto-crypto"}
 EXPECTED_COUNTS = {"mutualFund": 6, "japanStock": 4, "crypto": 5}
 PRICE_DATE_PATTERN = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
@@ -118,7 +118,7 @@ def load_price_rows() -> list[dict]:
             if not source:
                 raise ValueError(f"line {line_number}: source is required")
             if source not in ALLOWED_SOURCES:
-                raise ValueError(f"line {line_number}: source must be manual-csv / auto-mutual-fund / auto-japan-stock")
+                raise ValueError(f"line {line_number}: source must be manual-csv / auto-mutual-fund / auto-japan-stock / auto-crypto")
             parsed_price_date = parse_price_date(price_date, line_number)
             if raw_code in seen_raw_codes:
                 raise ValueError(f"line {line_number}: duplicate code {raw_code}")
@@ -177,7 +177,7 @@ def validate_payload(payload: dict, rows: list[dict]) -> dict[str, int]:
         if item.get("currency") != "JPY":
             raise ValueError(f"{code}: currency must be JPY")
         if item.get("source") not in ALLOWED_SOURCES:
-            raise ValueError(f"{code}: source must be manual-csv / auto-mutual-fund / auto-japan-stock")
+            raise ValueError(f"{code}: source must be manual-csv / auto-mutual-fund / auto-japan-stock / auto-crypto")
         parse_price_date(str(item.get("priceDate", "")), 0)
     counts = {asset_type: 0 for asset_type in EXPECTED_COUNTS}
     for row in rows:
