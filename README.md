@@ -12,10 +12,10 @@ code,name,assetType,price,currency,source,priceDate,memo
 
 Rules:
 
-- `assetType`: `mutualFund`, `japanStock`, or `crypto`
+- `assetType`: `mutualFund`, `japanStock`, `usStock`, or `crypto`
 - `price`: numeric and greater than 0
-- `currency`: `JPY`
-- `source`: `manual-csv`, `auto-mutual-fund`, `auto-japan-stock`, or `auto-crypto`
+- `currency`: `JPY` or `USD`
+- `source`: `manual-csv`, `auto-mutual-fund`, `auto-japan-stock`, `auto-us-stock`, or `auto-crypto`
 - `priceDate`: `YYYY-MM-DD`
 - `memo`: optional
 
@@ -23,6 +23,27 @@ Generate:
 
 ```bash
 python3 tools/generate_prices_json.py
+```
+
+Generate price universe:
+
+```bash
+python3 tools/generate_price_universe.py
+```
+
+This creates:
+
+```text
+data/price_universe.csv
+```
+
+`price_universe.csv` is the candidate price fetch target list.
+It is generated from `candidates.json` plus required FundMaster and crypto definitions.
+
+Columns:
+
+```text
+code,name,assetType,currency,fetchEnabled,sourceHint,notes
 ```
 
 Fetch mutual fund prices manually:
@@ -60,7 +81,25 @@ Fetch Japan stock prices manually:
 python3 tools/fetch_japan_stock_prices.py
 ```
 
-This updates only `japanStock` rows in `data/prices_input.csv`.
+This reads `japanStock` rows from:
+
+```text
+data/price_universe.csv
+```
+
+Target condition:
+
+```text
+assetType=japanStock
+fetchEnabled=true
+sourceHint=yahoo-japan
+```
+
+Successful rows are updated or appended to:
+
+```text
+data/prices_input.csv
+```
 
 Source:
 
@@ -75,7 +114,55 @@ source=auto-japan-stock
 memo=株価 自動取得
 ```
 
-If a stock fetch fails, the existing CSV value is kept.
+If a stock fetch fails:
+
+- existing `prices_input.csv` row is kept
+- missing row is not added
+
+Fetch US stock prices manually:
+
+```bash
+python3 tools/fetch_us_stock_prices.py
+```
+
+This reads `usStock` rows from:
+
+```text
+data/price_universe.csv
+```
+
+Target condition:
+
+```text
+assetType=usStock
+fetchEnabled=true
+sourceHint=yahoo-us
+```
+
+Successful rows are updated or appended to:
+
+```text
+data/prices_input.csv
+```
+
+Source:
+
+```text
+Yahoo Finance quote pages
+```
+
+Successful rows use:
+
+```text
+currency=USD
+source=auto-us-stock
+memo=株価 自動取得
+```
+
+If a stock fetch fails:
+
+- existing `prices_input.csv` row is kept
+- missing row is not added
 
 Fetch crypto prices manually:
 

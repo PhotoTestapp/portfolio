@@ -28,9 +28,10 @@ from zoneinfo import ZoneInfo
 INPUT_PATH = Path("data/prices_input.csv")
 OUTPUT_PATH = Path("prices.json")
 EXPECTED_COLUMNS = ["code", "name", "assetType", "price", "currency", "source", "priceDate", "memo"]
-ALLOWED_ASSET_TYPES = {"mutualFund", "japanStock", "crypto"}
-ALLOWED_SOURCES = {"manual-csv", "auto-mutual-fund", "auto-japan-stock", "auto-crypto"}
-EXPECTED_COUNTS = {"mutualFund": 6, "japanStock": 4, "crypto": 5}
+ALLOWED_ASSET_TYPES = {"mutualFund", "japanStock", "usStock", "crypto"}
+ALLOWED_CURRENCIES = {"JPY", "USD"}
+ALLOWED_SOURCES = {"manual-csv", "auto-mutual-fund", "auto-japan-stock", "auto-us-stock", "auto-crypto"}
+MINIMUM_COUNTS = {"mutualFund": 6, "crypto": 5}
 PRICE_DATE_PATTERN = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
@@ -107,18 +108,18 @@ def load_price_rows() -> list[dict]:
             if not asset_type:
                 raise ValueError(f"line {line_number}: assetType is required")
             if asset_type not in ALLOWED_ASSET_TYPES:
-                raise ValueError(f"line {line_number}: assetType must be mutualFund / japanStock / crypto")
+                raise ValueError(f"line {line_number}: assetType must be mutualFund / japanStock / usStock / crypto")
             if not price_text:
                 raise ValueError(f"line {line_number}: price is required")
             price = parse_price(price_text, line_number)
             if not currency:
                 raise ValueError(f"line {line_number}: currency is required")
-            if currency != "JPY":
-                raise ValueError(f"line {line_number}: currency must be JPY")
+            if currency not in ALLOWED_CURRENCIES:
+                raise ValueError(f"line {line_number}: currency must be JPY / USD")
             if not source:
                 raise ValueError(f"line {line_number}: source is required")
             if source not in ALLOWED_SOURCES:
-                raise ValueError(f"line {line_number}: source must be manual-csv / auto-mutual-fund / auto-japan-stock / auto-crypto")
+                raise ValueError(f"line {line_number}: source must be manual-csv / auto-mutual-fund / auto-japan-stock / auto-us-stock / auto-crypto")
             parsed_price_date = parse_price_date(price_date, line_number)
             if raw_code in seen_raw_codes:
                 raise ValueError(f"line {line_number}: duplicate code {raw_code}")
@@ -174,19 +175,17 @@ def validate_payload(payload: dict, rows: list[dict]) -> dict[str, int]:
             raise ValueError(f"{code}: price must be finite")
         if price <= 0:
             raise ValueError(f"{code}: price must be greater than 0")
-        if item.get("currency") != "JPY":
-            raise ValueError(f"{code}: currency must be JPY")
+        if item.get("currency") not in ALLOWED_CURRENCIES:
+            raise ValueError(f"{code}: currency must be JPY / USD")
         if item.get("source") not in ALLOWED_SOURCES:
-            raise ValueError(f"{code}: source must be manual-csv / auto-mutual-fund / auto-japan-stock / auto-crypto")
+            raise ValueError(f"{code}: source must be manual-csv / auto-mutual-fund / auto-japan-stock / auto-us-stock / auto-crypto")
         parse_price_date(str(item.get("priceDate", "")), 0)
-    counts = {asset_type: 0 for asset_type in EXPECTED_COUNTS}
+    counts = {asset_type: 0 for asset_type in ALLOWED_ASSET_TYPES}
     for row in rows:
         counts[row["assetType"]] += 1
-    if len(rows) != 15:
-        print(f"Warning: expected total 15 records, got {len(rows)}")
-    for asset_type, expected in EXPECTED_COUNTS.items():
-        if counts[asset_type] != expected:
-            print(f"Warning: expected {asset_type} {expected} records, got {counts[asset_type]}")
+    for asset_type, minimum in MINIMUM_COUNTS.items():
+        if counts[asset_type] < minimum:
+            print(f"Warning: expected at least {minimum} {asset_type} records, got {counts[asset_type]}")
     return counts
 
 
@@ -220,6 +219,9 @@ def main() -> None:
     print()
     print("japanStock:")
     print(counts["japanStock"])
+    print()
+    print("usStock:")
+    print(counts["usStock"])
     print()
     print("crypto:")
     print(counts["crypto"])
