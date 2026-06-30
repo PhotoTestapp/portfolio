@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-30T06:38:41+09:00",
+  "asOf": "2026-06-30T09:05:11+09:00",
   "prices": {
     "03311187": {
       "name": "eMAXIS Slim 米国株式（S&P500）",
@@ -51,39 +51,39 @@
     },
     "9432": {
       "name": "NTT",
-      "price": 146,
+      "price": 146.4,
       "currency": "JPY",
       "source": "auto-japan-stock",
-      "priceDate": "2026-06-29",
+      "priceDate": "2026-06-30",
       "memo": "株価 自動取得"
     },
     "8410": {
       "name": "セブン銀行",
-      "price": 280.7,
+      "price": 282,
       "currency": "JPY",
       "source": "auto-japan-stock",
-      "priceDate": "2026-06-29",
+      "priceDate": "2026-06-30",
       "memo": "株価 自動取得"
     },
     "6857": {
       "name": "アドバンテスト",
-      "price": 31950,
+      "price": 32460,
       "currency": "JPY",
       "source": "auto-japan-stock",
-      "priceDate": "2026-06-29",
+      "priceDate": "2026-06-30",
       "memo": "株価 自動取得"
     },
     "7741": {
       "name": "HOYA",
-      "price": 25805,
+      "price": 26230,
       "currency": "JPY",
       "source": "auto-japan-stock",
-      "priceDate": "2026-06-29",
+      "priceDate": "2026-06-30",
       "memo": "株価 自動取得"
     },
     "BTC": {
       "name": "Bitcoin",
-      "price": 9768014,
+      "price": 9738002,
       "currency": "JPY",
       "source": "auto-crypto",
       "priceDate": "2026-06-30",
@@ -91,7 +91,7 @@
     },
     "ETH": {
       "name": "Ethereum",
-      "price": 261743,
+      "price": 260766,
       "currency": "JPY",
       "source": "auto-crypto",
       "priceDate": "2026-06-30",
@@ -99,7 +99,7 @@
     },
     "XRP": {
       "name": "XRP",
-      "price": 171.92,
+      "price": 171.14,
       "currency": "JPY",
       "source": "auto-crypto",
       "priceDate": "2026-06-30",
@@ -107,7 +107,7 @@
     },
     "SOL": {
       "name": "Solana",
-      "price": 12225.83,
+      "price": 12147.66,
       "currency": "JPY",
       "source": "auto-crypto",
       "priceDate": "2026-06-30",
@@ -115,7 +115,7 @@
     },
     "DOGE": {
       "name": "Dogecoin",
-      "price": 11.97,
+      "price": 11.87,
       "currency": "JPY",
       "source": "auto-crypto",
       "priceDate": "2026-06-30",

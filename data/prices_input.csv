@@ -5,15 +5,15 @@ code,name,assetType,price,currency,source,priceDate,memo
 01313098,野村世界業種別投資シリーズ（世界半導体株投資）,mutualFund,347429,JPY,auto-mutual-fund,2026-06-29,基準価額 自動取得
 4731299C,DLIBJ公社債オープン（中期コース）,mutualFund,8817,JPY,auto-mutual-fund,2026-06-29,基準価額 自動取得
 AJ312217,Smart-i ゴールドファンド（為替ヘッジあり）,mutualFund,17265,JPY,auto-mutual-fund,2026-06-29,基準価額 自動取得
-9432,NTT,japanStock,146,JPY,auto-japan-stock,2026-06-29,株価 自動取得
-8410,セブン銀行,japanStock,280.7,JPY,auto-japan-stock,2026-06-29,株価 自動取得
-6857,アドバンテスト,japanStock,31950,JPY,auto-japan-stock,2026-06-29,株価 自動取得
-7741,HOYA,japanStock,25805,JPY,auto-japan-stock,2026-06-29,株価 自動取得
-BTC,Bitcoin,crypto,9768014,JPY,auto-crypto,2026-06-30,JPY価格 自動取得
-ETH,Ethereum,crypto,261743,JPY,auto-crypto,2026-06-30,JPY価格 自動取得
-XRP,XRP,crypto,171.92,JPY,auto-crypto,2026-06-30,JPY価格 自動取得
-SOL,Solana,crypto,12225.83,JPY,auto-crypto,2026-06-30,JPY価格 自動取得
-DOGE,Dogecoin,crypto,11.97,JPY,auto-crypto,2026-06-30,JPY価格 自動取得
+9432,NTT,japanStock,146.4,JPY,auto-japan-stock,2026-06-30,株価 自動取得
+8410,セブン銀行,japanStock,282,JPY,auto-japan-stock,2026-06-30,株価 自動取得
+6857,アドバンテスト,japanStock,32460,JPY,auto-japan-stock,2026-06-30,株価 自動取得
+7741,HOYA,japanStock,26230,JPY,auto-japan-stock,2026-06-30,株価 自動取得
+BTC,Bitcoin,crypto,9738002,JPY,auto-crypto,2026-06-30,JPY価格 自動取得
+ETH,Ethereum,crypto,260766,JPY,auto-crypto,2026-06-30,JPY価格 自動取得
+XRP,XRP,crypto,171.14,JPY,auto-crypto,2026-06-30,JPY価格 自動取得
+SOL,Solana,crypto,12147.66,JPY,auto-crypto,2026-06-30,JPY価格 自動取得
+DOGE,Dogecoin,crypto,11.87,JPY,auto-crypto,2026-06-30,JPY価格 自動取得
 1605,INPEX,japanStock,3278,JPY,auto-japan-stock,2026-06-29,株価 自動取得
 1662,石油資源開発,japanStock,1605,JPY,auto-japan-stock,2026-06-29,株価 自動取得
 167A,リョーサン菱洋ホールディングス,japanStock,2685,JPY,auto-japan-stock,2026-06-29,株価 自動取得
