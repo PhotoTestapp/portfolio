@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-05T10:33:30+09:00",
+  "asOf": "2026-07-05T10:37:53+09:00",
   "prices": {
     "03311187": {
       "name": "eMAXIS Slim 米国株式（S&P500）",
@@ -83,7 +83,7 @@
     },
     "BTC": {
       "name": "Bitcoin",
-      "price": 10138413,
+      "price": 10130918,
       "currency": "JPY",
       "source": "auto-crypto",
       "priceDate": "2026-07-05",
@@ -91,7 +91,7 @@
     },
     "ETH": {
       "name": "Ethereum",
-      "price": 284744,
+      "price": 284418,
       "currency": "JPY",
       "source": "auto-crypto",
       "priceDate": "2026-07-05",
@@ -99,7 +99,7 @@
     },
     "XRP": {
       "name": "XRP",
-      "price": 184.65,
+      "price": 184.49,
       "currency": "JPY",
       "source": "auto-crypto",
       "priceDate": "2026-07-05",
@@ -107,7 +107,7 @@
     },
     "SOL": {
       "name": "Solana",
-      "price": 13047.5,
+      "price": 13030.32,
       "currency": "JPY",
       "source": "auto-crypto",
       "priceDate": "2026-07-05",
@@ -115,7 +115,7 @@
     },
     "DOGE": {
       "name": "Dogecoin",
-      "price": 12.41,
+      "price": 12.4,
       "currency": "JPY",
       "source": "auto-crypto",
       "priceDate": "2026-07-05",
