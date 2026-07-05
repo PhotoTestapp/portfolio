@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import csv
 import html
+import math
 import re
 import subprocess
 import sys
@@ -74,6 +75,10 @@ def parse_price(value: str) -> int | float:
         raise ValueError("株価を数値として解析できません")
     price = float(match.group(1).replace(",", ""))
     return int(price) if price.is_integer() else price
+
+
+def valid_price(value: int | float) -> bool:
+    return isinstance(value, (int, float)) and math.isfinite(float(value)) and float(value) > 0
 
 
 def format_price(value: int | float) -> str:
@@ -156,11 +161,15 @@ def parse_yahoo_finance(html_text: str) -> StockPrice:
         r"\d{4}[/-]\d{1,2}[/-]\d{1,2}",
         r"(?<!\d)\d{1,2}/\d{1,2}(?!\d)",
     ]
+    price = parse_price(price_match.group(1))
+    if not valid_price(price):
+        raise ValueError("invalid price <= 0")
+
     for pattern in date_patterns:
         date_match = re.search(pattern, board)
         if date_match:
             return StockPrice(
-                price=parse_price(price_match.group(1)),
+                price=price,
                 price_date=parse_date(date_match.group(0)),
                 date_from_page=True,
                 previous_day_change=previous_day_change,
@@ -168,7 +177,7 @@ def parse_yahoo_finance(html_text: str) -> StockPrice:
             )
 
     return StockPrice(
-        price=parse_price(price_match.group(1)),
+        price=price,
         price_date=date.today().isoformat(),
         date_from_page=False,
         previous_day_change=previous_day_change,
@@ -192,12 +201,7 @@ def fetch_stock_price(target: StockTarget) -> tuple[StockPrice | None, str | Non
     except (OSError, urllib.error.URLError, ValueError) as exc:
         reason = str(exc)
         print("Result: failed")
-        print("Fetch failed")
-        print("Code:")
-        print(target.code)
-        print("Reason:")
-        print(reason)
-        print("Existing CSV value kept.")
+        print(f"Reason: {reason}")
         print()
         return None, reason
 
@@ -220,13 +224,38 @@ def write_csv_rows(rows: list[dict[str, str]]) -> None:
     temp_path.replace(CSV_PATH)
 
 
+def csv_price(row: dict[str, str]) -> float | None:
+    try:
+        value = float(row.get("price", ""))
+    except ValueError:
+        return None
+    return value if math.isfinite(value) else None
+
+
+def log_failure_actions(failures: dict[str, str], existing_rows: dict[str, dict[str, str]]) -> None:
+    for target in STOCK_TARGETS:
+        reason = failures.get(target.code)
+        if reason is None:
+            continue
+
+        print(f"{target.code} {target.name}")
+        if target.code in existing_rows:
+            existing_price = existing_rows[target.code].get("price", "")
+            print("Action: kept existing row")
+            print(f"Existing price: {existing_price}")
+        else:
+            print("Action: skipped")
+        print()
+
+
 def update_csv(successes: dict[str, StockPrice]) -> None:
     rows = load_csv_rows()
-    target_codes = {target.code for target in STOCK_TARGETS}
-    csv_codes = {row["code"] for row in rows if row.get("assetType") == "japanStock"}
-    missing_codes = sorted(target_codes - csv_codes)
-    if missing_codes:
-        raise ValueError(f"CSV missing target Japan stock rows: {', '.join(missing_codes)}")
+    targets_by_code = {target.code: target for target in STOCK_TARGETS}
+    existing_target_codes = {
+        row["code"]
+        for row in rows
+        if row.get("assetType") == "japanStock" and row.get("code") in targets_by_code
+    }
 
     for row in rows:
         code = row.get("code", "")
@@ -235,10 +264,37 @@ def update_csv(successes: dict[str, StockPrice]) -> None:
         if row.get("assetType") != "japanStock":
             raise ValueError(f"{code}: target row is not japanStock")
         fetched = successes[code]
+        if not valid_price(fetched.price):
+            raise ValueError(f"{code}: invalid fetched price before CSV write")
         row["price"] = format_price(fetched.price)
         row["source"] = "auto-japan-stock"
         row["priceDate"] = fetched.price_date
         row["memo"] = "株価 自動取得"
+
+    for code, fetched in successes.items():
+        if code in existing_target_codes:
+            continue
+        if not valid_price(fetched.price):
+            raise ValueError(f"{code}: invalid fetched price before CSV append")
+        target = targets_by_code[code]
+        rows.append(
+            {
+                "code": target.code,
+                "name": target.name,
+                "assetType": "japanStock",
+                "price": format_price(fetched.price),
+                "currency": "JPY",
+                "source": "auto-japan-stock",
+                "priceDate": fetched.price_date,
+                "memo": "株価 自動取得",
+            }
+        )
+
+    for row in rows:
+        if row.get("assetType") == "japanStock" and row.get("code") in targets_by_code:
+            price = csv_price(row)
+            if price is None or price <= 0:
+                raise ValueError(f"{row.get('code', '')}: invalid Japan stock price in CSV")
 
     write_csv_rows(rows)
 
@@ -254,6 +310,11 @@ def main() -> int:
     print("Fetching Japan stock prices...")
     print()
 
+    existing_rows = {
+        row.get("code", ""): row
+        for row in load_csv_rows()
+        if row.get("assetType") == "japanStock"
+    }
     successes: dict[str, StockPrice] = {}
     failures: dict[str, str] = {}
     for target in STOCK_TARGETS:
@@ -262,6 +323,7 @@ def main() -> int:
             successes[target.code] = fetched
         else:
             failures[target.code] = reason or "unknown error"
+    log_failure_actions(failures, existing_rows)
 
     if not successes:
         print("All Japan stock fetches failed.")
