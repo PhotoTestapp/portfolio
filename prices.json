@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-20T09:07:18+09:00",
+  "asOf": "2026-07-21T09:07:21+09:00",
   "prices": {
     "03311187": {
       "name": "eMAXIS Slim 米国株式（S&P500）",
@@ -51,74 +51,74 @@
     },
     "9432": {
       "name": "NTT",
-      "price": 151.1,
+      "price": 153.8,
       "currency": "JPY",
       "source": "auto-japan-stock",
-      "priceDate": "2026-07-17",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "8410": {
       "name": "セブン銀行",
-      "price": 302.8,
+      "price": 305.7,
       "currency": "JPY",
       "source": "auto-japan-stock",
-      "priceDate": "2026-07-17",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "6857": {
       "name": "アドバンテスト",
-      "price": 27505,
+      "price": 27770,
       "currency": "JPY",
       "source": "auto-japan-stock",
-      "priceDate": "2026-07-17",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "7741": {
       "name": "HOYA",
-      "price": 25215,
+      "price": 25575,
       "currency": "JPY",
       "source": "auto-japan-stock",
-      "priceDate": "2026-07-17",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "BTC": {
       "name": "Bitcoin",
-      "price": 10516185,
+      "price": 10587085,
       "currency": "JPY",
       "source": "auto-crypto",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "JPY価格 自動取得"
     },
     "ETH": {
       "name": "Ethereum",
-      "price": 304330,
+      "price": 308896,
       "currency": "JPY",
       "source": "auto-crypto",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "JPY価格 自動取得"
     },
     "XRP": {
       "name": "XRP",
-      "price": 178.11,
+      "price": 180.6,
       "currency": "JPY",
       "source": "auto-crypto",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "JPY価格 自動取得"
     },
     "SOL": {
       "name": "Solana",
-      "price": 12392.35,
+      "price": 12635.8,
       "currency": "JPY",
       "source": "auto-crypto",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "JPY価格 自動取得"
     },
     "DOGE": {
       "name": "Dogecoin",
-      "price": 11.75,
+      "price": 11.7,
       "currency": "JPY",
       "source": "auto-crypto",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "JPY価格 自動取得"
     },
     "1605": {
@@ -523,234 +523,234 @@
     },
     "AAPL": {
       "name": "Apple",
-      "price": 333.74,
+      "price": 326.59,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "ABBV": {
       "name": "AbbVie",
-      "price": 254.49,
+      "price": 253.38,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "ACN": {
       "name": "Accenture",
-      "price": 143.57,
+      "price": 144.73,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "AEHR": {
       "name": "Aehr Test Systems",
-      "price": 81.05,
+      "price": 77.36,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "AMAT": {
       "name": "Applied Materials",
-      "price": 529.66,
+      "price": 525.7,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "AMZN": {
       "name": "Amazon",
-      "price": 247.23,
+      "price": 249.99,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "ASML": {
       "name": "ASML Holding",
-      "price": 1747.58,
+      "price": 1739.02,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "AVGO": {
       "name": "Broadcom",
-      "price": 370.83,
+      "price": 378.16,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "AWK": {
       "name": "American Water Works",
-      "price": 135.11,
+      "price": 133.65,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "BRK.B": {
       "name": "Berkshire Hathaway",
-      "price": 490.91,
+      "price": 491.25,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "CB": {
       "name": "Chubb",
-      "price": 352.89,
+      "price": 352.93,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "CEG": {
       "name": "Constellation Energy",
-      "price": 252.39,
+      "price": 253.5,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "COST": {
       "name": "Costco",
-      "price": 940.87,
+      "price": 935.8,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "CSCO": {
       "name": "Cisco",
-      "price": 111.94,
+      "price": 110.7,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "CVX": {
       "name": "Chevron",
-      "price": 187.38,
+      "price": 189.71,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "DAL": {
       "name": "Delta Air Lines",
-      "price": 84.17,
+      "price": 84.54,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "DUK": {
       "name": "Duke Energy",
-      "price": 125.01,
+      "price": 125.85,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "ETN": {
       "name": "Eaton",
-      "price": 410.33,
+      "price": 402.53,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "GOOGL": {
       "name": "Alphabet",
-      "price": 346.77,
+      "price": 351.99,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "IONQ": {
       "name": "IonQ",
-      "price": 34.78,
+      "price": 34.24,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "ISRG": {
       "name": "Intuitive Surgical",
-      "price": 345.42,
+      "price": 353.17,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "JNJ": {
       "name": "Johnson & Johnson",
-      "price": 253.04,
+      "price": 248.82,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "JPM": {
       "name": "JPMorgan Chase",
-      "price": 341.1,
+      "price": 338.87,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "KO": {
       "name": "Coca-Cola",
-      "price": 81.56,
+      "price": 82.12,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "LIN": {
       "name": "Linde",
-      "price": 513.22,
+      "price": 512.8,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "LLY": {
       "name": "Eli Lilly",
-      "price": 1179.11,
+      "price": 1146.9,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "MA": {
       "name": "Mastercard",
-      "price": 543.6,
+      "price": 547.44,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "META": {
       "name": "Meta Platforms",
-      "price": 646.01,
+      "price": 645.85,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "MSFT": {
       "name": "Microsoft",
-      "price": 393.82,
+      "price": 402.29,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "NEE": {
@@ -758,15 +758,15 @@
       "price": 88.8,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "NVDA": {
       "name": "NVIDIA",
-      "price": 202.81,
+      "price": 203.28,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "O": {
@@ -774,103 +774,103 @@
       "price": 65.71,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "ORCL": {
       "name": "Oracle",
-      "price": 126.41,
+      "price": 121.38,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "PEP": {
       "name": "PepsiCo",
-      "price": 137.12,
+      "price": 135.46,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "PG": {
       "name": "Procter & Gamble",
-      "price": 149.98,
+      "price": 149.13,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "RKLB": {
       "name": "Rocket Lab",
-      "price": 67.62,
+      "price": 65.74,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "SO": {
       "name": "Southern Company",
-      "price": 95.3,
+      "price": 94.46,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "TMO": {
       "name": "Thermo Fisher",
-      "price": 532.48,
+      "price": 528.68,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "TSM": {
       "name": "Taiwan Semiconductor",
-      "price": 398.37,
+      "price": 402.3,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "UNH": {
       "name": "UnitedHealth",
-      "price": 426.09,
+      "price": 421.55,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "UPS": {
       "name": "UPS",
-      "price": 117.72,
+      "price": 113.15,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "V": {
       "name": "Visa",
-      "price": 358.56,
+      "price": 360.57,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "VZ": {
       "name": "Verizon",
-      "price": 43.59,
+      "price": 43.5,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "WCN": {
       "name": "Waste Connections",
-      "price": 171.91,
+      "price": 170.87,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "WM": {
@@ -878,23 +878,23 @@
       "price": 239.31,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "WMB": {
       "name": "Williams Companies",
-      "price": 73.38,
+      "price": 74.16,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     },
     "XOM": {
       "name": "Exxon Mobil",
-      "price": 147.36,
+      "price": 148.36,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-07-20",
+      "priceDate": "2026-07-21",
       "memo": "株価 自動取得"
     }
   }
