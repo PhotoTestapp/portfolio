@@ -1,19 +1,19 @@
 code,name,assetType,price,currency,source,priceDate,memo
-03311187,eMAXIS Slim 米国株式（S&P500）,mutualFund,44991,JPY,auto-mutual-fund,2026-09-28,基準価額 自動取得
-0331418A,eMAXIS Slim 全世界株式（オール・カントリー）,mutualFund,38230,JPY,auto-mutual-fund,2026-09-28,基準価額 自動取得
-29313233,ニッセイNASDAQ100インデックスファンド,mutualFund,28808,JPY,auto-mutual-fund,2026-09-28,基準価額 自動取得
-01313098,野村世界業種別投資シリーズ（世界半導体株投資）,mutualFund,340871,JPY,auto-mutual-fund,2026-09-28,基準価額 自動取得
-4731299C,DLIBJ公社債オープン（中期コース）,mutualFund,8678,JPY,auto-mutual-fund,2026-09-28,基準価額 自動取得
-AJ312217,Smart-i ゴールドファンド（為替ヘッジあり）,mutualFund,17963,JPY,auto-mutual-fund,2026-09-28,基準価額 自動取得
-9432,NTT,japanStock,172.5,JPY,auto-japan-stock,2026-09-29,株価 自動取得
-8410,セブン銀行,japanStock,346.5,JPY,auto-japan-stock,2026-09-29,株価 自動取得
-6857,アドバンテスト,japanStock,33570,JPY,auto-japan-stock,2026-09-29,株価 自動取得
-7741,HOYA,japanStock,23645,JPY,auto-japan-stock,2026-09-29,株価 自動取得
-BTC,Bitcoin,crypto,13148033,JPY,auto-crypto,2026-09-29,JPY価格 自動取得
-ETH,Ethereum,crypto,423556,JPY,auto-crypto,2026-09-29,JPY価格 自動取得
-XRP,XRP,crypto,235.97,JPY,auto-crypto,2026-09-29,JPY価格 自動取得
-SOL,Solana,crypto,18703.92,JPY,auto-crypto,2026-09-29,JPY価格 自動取得
-DOGE,Dogecoin,crypto,14.8,JPY,auto-crypto,2026-09-29,JPY価格 自動取得
+03311187,eMAXIS Slim 米国株式（S&P500）,mutualFund,44450,JPY,auto-mutual-fund,2026-09-30,基準価額 自動取得
+0331418A,eMAXIS Slim 全世界株式（オール・カントリー）,mutualFund,37791,JPY,auto-mutual-fund,2026-09-30,基準価額 自動取得
+29313233,ニッセイNASDAQ100インデックスファンド,mutualFund,28479,JPY,auto-mutual-fund,2026-09-30,基準価額 自動取得
+01313098,野村世界業種別投資シリーズ（世界半導体株投資）,mutualFund,341060,JPY,auto-mutual-fund,2026-09-30,基準価額 自動取得
+4731299C,DLIBJ公社債オープン（中期コース）,mutualFund,8692,JPY,auto-mutual-fund,2026-09-30,基準価額 自動取得
+AJ312217,Smart-i ゴールドファンド（為替ヘッジあり）,mutualFund,17485,JPY,auto-mutual-fund,2026-09-30,基準価額 自動取得
+9432,NTT,japanStock,170,JPY,auto-japan-stock,2026-10-01,株価 自動取得
+8410,セブン銀行,japanStock,341.5,JPY,auto-japan-stock,2026-10-01,株価 自動取得
+6857,アドバンテスト,japanStock,35870,JPY,auto-japan-stock,2026-10-01,株価 自動取得
+7741,HOYA,japanStock,23830,JPY,auto-japan-stock,2026-10-01,株価 自動取得
+BTC,Bitcoin,crypto,13158802,JPY,auto-crypto,2026-10-01,JPY価格 自動取得
+ETH,Ethereum,crypto,422800,JPY,auto-crypto,2026-10-01,JPY価格 自動取得
+XRP,XRP,crypto,234.72,JPY,auto-crypto,2026-10-01,JPY価格 自動取得
+SOL,Solana,crypto,18584.58,JPY,auto-crypto,2026-10-01,JPY価格 自動取得
+DOGE,Dogecoin,crypto,14.87,JPY,auto-crypto,2026-10-01,JPY価格 自動取得
 1605,INPEX,japanStock,3278,JPY,auto-japan-stock,2026-06-29,株価 自動取得
 1662,石油資源開発,japanStock,1605,JPY,auto-japan-stock,2026-06-29,株価 自動取得
 167A,リョーサン菱洋ホールディングス,japanStock,2685,JPY,auto-japan-stock,2026-06-29,株価 自動取得
@@ -64,50 +64,50 @@ DOGE,Dogecoin,crypto,14.8,JPY,auto-crypto,2026-09-29,JPY価格 自動取得
 9735,セコム,japanStock,6451,JPY,auto-japan-stock,2026-06-29,株価 自動取得
 9759,NSD,japanStock,2485,JPY,auto-japan-stock,2026-06-29,株価 自動取得
 9843,ニトリHD,japanStock,2482.5,JPY,auto-japan-stock,2026-06-29,株価 自動取得
-AAPL,Apple,usStock,338.4,USD,auto-us-stock,2026-09-29,株価 自動取得
-ABBV,AbbVie,usStock,266.28,USD,auto-us-stock,2026-09-29,株価 自動取得
-ACN,Accenture,usStock,174.47,USD,auto-us-stock,2026-09-29,株価 自動取得
-AEHR,Aehr Test Systems,usStock,98.49,USD,auto-us-stock,2026-09-29,株価 自動取得
-AMAT,Applied Materials,usStock,486.76,USD,auto-us-stock,2026-09-29,株価 自動取得
-AMZN,Amazon,usStock,246.15,USD,auto-us-stock,2026-09-29,株価 自動取得
-ASML,ASML Holding,usStock,1771.41,USD,auto-us-stock,2026-09-29,株価 自動取得
-AVGO,Broadcom,usStock,349.57,USD,auto-us-stock,2026-09-29,株価 自動取得
-AWK,American Water Works,usStock,128.93,USD,auto-us-stock,2026-09-29,株価 自動取得
-BRK.B,Berkshire Hathaway,usStock,503.09,USD,auto-us-stock,2026-09-29,株価 自動取得
-CB,Chubb,usStock,331.37,USD,auto-us-stock,2026-09-29,株価 自動取得
-CEG,Constellation Energy,usStock,260.43,USD,auto-us-stock,2026-09-29,株価 自動取得
-COST,Costco,usStock,922.92,USD,auto-us-stock,2026-09-29,株価 自動取得
-CSCO,Cisco,usStock,106.74,USD,auto-us-stock,2026-09-29,株価 自動取得
-CVX,Chevron,usStock,206.37,USD,auto-us-stock,2026-09-29,株価 自動取得
-DAL,Delta Air Lines,usStock,84.03,USD,auto-us-stock,2026-09-29,株価 自動取得
-DUK,Duke Energy,usStock,113.41,USD,auto-us-stock,2026-09-29,株価 自動取得
-ETN,Eaton,usStock,431.41,USD,auto-us-stock,2026-09-29,株価 自動取得
-GOOGL,Alphabet,usStock,342.75,USD,auto-us-stock,2026-09-29,株価 自動取得
-IONQ,IonQ,usStock,44.58,USD,auto-us-stock,2026-09-29,株価 自動取得
-ISRG,Intuitive Surgical,usStock,414.79,USD,auto-us-stock,2026-09-29,株価 自動取得
-JNJ,Johnson & Johnson,usStock,271.95,USD,auto-us-stock,2026-09-29,株価 自動取得
-JPM,JPMorgan Chase,usStock,336.59,USD,auto-us-stock,2026-09-29,株価 自動取得
-KO,Coca-Cola,usStock,87.18,USD,auto-us-stock,2026-09-29,株価 自動取得
-LIN,Linde,usStock,472.04,USD,auto-us-stock,2026-09-29,株価 自動取得
-LLY,Eli Lilly,usStock,1184.78,USD,auto-us-stock,2026-09-29,株価 自動取得
-MA,Mastercard,usStock,568.26,USD,auto-us-stock,2026-09-29,株価 自動取得
-META,Meta Platforms,usStock,715.62,USD,auto-us-stock,2026-09-29,株価 自動取得
-MSFT,Microsoft,usStock,509.22,USD,auto-us-stock,2026-09-29,株価 自動取得
-NEE,NextEra Energy,usStock,75.49,USD,auto-us-stock,2026-09-29,株価 自動取得
-NVDA,NVIDIA,usStock,228.86,USD,auto-us-stock,2026-09-29,株価 自動取得
-O,Realty Income,usStock,55.35,USD,auto-us-stock,2026-09-29,株価 自動取得
-ORCL,Oracle,usStock,132.6,USD,auto-us-stock,2026-09-29,株価 自動取得
-PEP,PepsiCo,usStock,128.5,USD,auto-us-stock,2026-09-29,株価 自動取得
-PG,Procter & Gamble,usStock,149.03,USD,auto-us-stock,2026-09-29,株価 自動取得
-RKLB,Rocket Lab,usStock,72.19,USD,auto-us-stock,2026-09-29,株価 自動取得
-SO,Southern Company,usStock,82.35,USD,auto-us-stock,2026-09-29,株価 自動取得
-TMO,Thermo Fisher,usStock,678.6,USD,auto-us-stock,2026-09-29,株価 自動取得
-TSM,Taiwan Semiconductor,usStock,452.88,USD,auto-us-stock,2026-09-29,株価 自動取得
-UNH,UnitedHealth,usStock,377.83,USD,auto-us-stock,2026-09-29,株価 自動取得
-UPS,UPS,usStock,94.25,USD,auto-us-stock,2026-09-29,株価 自動取得
-V,Visa,usStock,367.74,USD,auto-us-stock,2026-09-29,株価 自動取得
-VZ,Verizon,usStock,46.68,USD,auto-us-stock,2026-09-29,株価 自動取得
-WCN,Waste Connections,usStock,156.16,USD,auto-us-stock,2026-09-29,株価 自動取得
-WM,Waste Management,usStock,206.44,USD,auto-us-stock,2026-09-29,株価 自動取得
-WMB,Williams Companies,usStock,68.98,USD,auto-us-stock,2026-09-29,株価 自動取得
-XOM,Exxon Mobil,usStock,162.52,USD,auto-us-stock,2026-09-29,株価 自動取得
+AAPL,Apple,usStock,333.02,USD,auto-us-stock,2026-10-01,株価 自動取得
+ABBV,AbbVie,usStock,261.59,USD,auto-us-stock,2026-10-01,株価 自動取得
+ACN,Accenture,usStock,183.37,USD,auto-us-stock,2026-10-01,株価 自動取得
+AEHR,Aehr Test Systems,usStock,99.62,USD,auto-us-stock,2026-10-01,株価 自動取得
+AMAT,Applied Materials,usStock,511.38,USD,auto-us-stock,2026-10-01,株価 自動取得
+AMZN,Amazon,usStock,249.15,USD,auto-us-stock,2026-10-01,株価 自動取得
+ASML,ASML Holding,usStock,1811.67,USD,auto-us-stock,2026-10-01,株価 自動取得
+AVGO,Broadcom,usStock,351.19,USD,auto-us-stock,2026-10-01,株価 自動取得
+AWK,American Water Works,usStock,129.8,USD,auto-us-stock,2026-09-30,株価 自動取得
+BRK.B,Berkshire Hathaway,usStock,497.95,USD,auto-us-stock,2026-10-01,株価 自動取得
+CB,Chubb,usStock,325.25,USD,auto-us-stock,2026-10-01,株価 自動取得
+CEG,Constellation Energy,usStock,254.02,USD,auto-us-stock,2026-10-01,株価 自動取得
+COST,Costco,usStock,910.34,USD,auto-us-stock,2026-10-01,株価 自動取得
+CSCO,Cisco,usStock,107.63,USD,auto-us-stock,2026-10-01,株価 自動取得
+CVX,Chevron,usStock,204.21,USD,auto-us-stock,2026-10-01,株価 自動取得
+DAL,Delta Air Lines,usStock,83.46,USD,auto-us-stock,2026-10-01,株価 自動取得
+DUK,Duke Energy,usStock,114.21,USD,auto-us-stock,2026-09-30,株価 自動取得
+ETN,Eaton,usStock,429.71,USD,auto-us-stock,2026-10-01,株価 自動取得
+GOOGL,Alphabet,usStock,344.08,USD,auto-us-stock,2026-10-01,株価 自動取得
+IONQ,IonQ,usStock,43.86,USD,auto-us-stock,2026-10-01,株価 自動取得
+ISRG,Intuitive Surgical,usStock,406.63,USD,auto-us-stock,2026-10-01,株価 自動取得
+JNJ,Johnson & Johnson,usStock,264.74,USD,auto-us-stock,2026-10-01,株価 自動取得
+JPM,JPMorgan Chase,usStock,330.83,USD,auto-us-stock,2026-10-01,株価 自動取得
+KO,Coca-Cola,usStock,86.08,USD,auto-us-stock,2026-10-01,株価 自動取得
+LIN,Linde,usStock,473.37,USD,auto-us-stock,2026-09-30,株価 自動取得
+LLY,Eli Lilly,usStock,1157.08,USD,auto-us-stock,2026-10-01,株価 自動取得
+MA,Mastercard,usStock,551.47,USD,auto-us-stock,2026-10-01,株価 自動取得
+META,Meta Platforms,usStock,725.18,USD,auto-us-stock,2026-10-01,株価 自動取得
+MSFT,Microsoft,usStock,512.9,USD,auto-us-stock,2026-10-01,株価 自動取得
+NEE,NextEra Energy,usStock,75.74,USD,auto-us-stock,2026-10-01,株価 自動取得
+NVDA,NVIDIA,usStock,228.38,USD,auto-us-stock,2026-10-01,株価 自動取得
+O,Realty Income,usStock,54.3,USD,auto-us-stock,2026-10-01,株価 自動取得
+ORCL,Oracle,usStock,137.3,USD,auto-us-stock,2026-10-01,株価 自動取得
+PEP,PepsiCo,usStock,126.72,USD,auto-us-stock,2026-10-01,株価 自動取得
+PG,Procter & Gamble,usStock,145.28,USD,auto-us-stock,2026-10-01,株価 自動取得
+RKLB,Rocket Lab,usStock,69.68,USD,auto-us-stock,2026-10-01,株価 自動取得
+SO,Southern Company,usStock,82.89,USD,auto-us-stock,2026-10-01,株価 自動取得
+TMO,Thermo Fisher,usStock,675.05,USD,auto-us-stock,2026-10-01,株価 自動取得
+TSM,Taiwan Semiconductor,usStock,456.19,USD,auto-us-stock,2026-10-01,株価 自動取得
+UNH,UnitedHealth,usStock,367.08,USD,auto-us-stock,2026-10-01,株価 自動取得
+UPS,UPS,usStock,93.44,USD,auto-us-stock,2026-10-01,株価 自動取得
+V,Visa,usStock,359.33,USD,auto-us-stock,2026-10-01,株価 自動取得
+VZ,Verizon,usStock,45.87,USD,auto-us-stock,2026-10-01,株価 自動取得
+WCN,Waste Connections,usStock,153.93,USD,auto-us-stock,2026-10-01,株価 自動取得
+WM,Waste Management,usStock,203.92,USD,auto-us-stock,2026-10-01,株価 自動取得
+WMB,Williams Companies,usStock,67.97,USD,auto-us-stock,2026-10-01,株価 自動取得
+XOM,Exxon Mobil,usStock,162.75,USD,auto-us-stock,2026-10-01,株価 自動取得
