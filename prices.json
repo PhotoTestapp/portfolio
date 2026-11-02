@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-01T09:07:37+09:00",
+  "asOf": "2026-11-02T09:06:35+09:00",
   "prices": {
     "03311187": {
       "name": "eMAXIS Slim 米国株式（S&P500）",
@@ -51,74 +51,74 @@
     },
     "9432": {
       "name": "NTT",
-      "price": 173.3,
+      "price": 173.9,
       "currency": "JPY",
       "source": "auto-japan-stock",
-      "priceDate": "2026-10-30",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "8410": {
       "name": "セブン銀行",
-      "price": 340.1,
+      "price": 334.7,
       "currency": "JPY",
       "source": "auto-japan-stock",
-      "priceDate": "2026-10-30",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "6857": {
       "name": "アドバンテスト",
-      "price": 34860,
+      "price": 34230,
       "currency": "JPY",
       "source": "auto-japan-stock",
-      "priceDate": "2026-10-30",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "7741": {
       "name": "HOYA",
-      "price": 26210,
+      "price": 25470,
       "currency": "JPY",
       "source": "auto-japan-stock",
-      "priceDate": "2026-10-30",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "BTC": {
       "name": "Bitcoin",
-      "price": 12204745,
+      "price": 12364849,
       "currency": "JPY",
       "source": "auto-crypto",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "JPY価格 自動取得"
     },
     "ETH": {
       "name": "Ethereum",
-      "price": 355236,
+      "price": 359477,
       "currency": "JPY",
       "source": "auto-crypto",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "JPY価格 自動取得"
     },
     "XRP": {
       "name": "XRP",
-      "price": 197.1,
+      "price": 197.42,
       "currency": "JPY",
       "source": "auto-crypto",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "JPY価格 自動取得"
     },
     "SOL": {
       "name": "Solana",
-      "price": 15038.78,
+      "price": 14935.04,
       "currency": "JPY",
       "source": "auto-crypto",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "JPY価格 自動取得"
     },
     "DOGE": {
       "name": "Dogecoin",
-      "price": 11.91,
+      "price": 11.93,
       "currency": "JPY",
       "source": "auto-crypto",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "JPY価格 自動取得"
     },
     "1605": {
@@ -526,7 +526,7 @@
       "price": 344.63,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "ABBV": {
@@ -534,7 +534,7 @@
       "price": 294.89,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "ACN": {
@@ -542,7 +542,7 @@
       "price": 258.24,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "AEHR": {
@@ -550,7 +550,7 @@
       "price": 54.89,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "AMAT": {
@@ -558,7 +558,7 @@
       "price": 390.09,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "AMZN": {
@@ -566,7 +566,7 @@
       "price": 240.35,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "ASML": {
@@ -574,7 +574,7 @@
       "price": 1565.9,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "AVGO": {
@@ -582,7 +582,7 @@
       "price": 326.08,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "AWK": {
@@ -590,7 +590,7 @@
       "price": 144.37,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "BRK.B": {
@@ -598,7 +598,7 @@
       "price": 542.49,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "CB": {
@@ -606,7 +606,7 @@
       "price": 364.12,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "CEG": {
@@ -614,7 +614,7 @@
       "price": 262.38,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "COST": {
@@ -622,7 +622,7 @@
       "price": 1012.28,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "CSCO": {
@@ -630,7 +630,7 @@
       "price": 104.51,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "CVX": {
@@ -638,7 +638,7 @@
       "price": 235.52,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "DAL": {
@@ -646,7 +646,7 @@
       "price": 80.15,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "DUK": {
@@ -654,7 +654,7 @@
       "price": 127.39,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "ETN": {
@@ -662,7 +662,7 @@
       "price": 369.97,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "GOOGL": {
@@ -670,7 +670,7 @@
       "price": 279.84,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "IONQ": {
@@ -678,7 +678,7 @@
       "price": 30.04,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "ISRG": {
@@ -686,7 +686,7 @@
       "price": 432.01,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "JNJ": {
@@ -694,7 +694,7 @@
       "price": 273.2,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "JPM": {
@@ -702,7 +702,7 @@
       "price": 337.04,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "KO": {
@@ -710,7 +710,7 @@
       "price": 94.08,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "LIN": {
@@ -718,7 +718,7 @@
       "price": 514.24,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "LLY": {
@@ -726,7 +726,7 @@
       "price": 1417.54,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "MA": {
@@ -734,7 +734,7 @@
       "price": 638.01,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "META": {
@@ -742,7 +742,7 @@
       "price": 614.99,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "MSFT": {
@@ -750,7 +750,7 @@
       "price": 521.91,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "NEE": {
@@ -758,7 +758,7 @@
       "price": 83.71,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "NVDA": {
@@ -766,7 +766,7 @@
       "price": 204.64,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "O": {
@@ -774,7 +774,7 @@
       "price": 56.93,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "ORCL": {
@@ -782,7 +782,7 @@
       "price": 130.67,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "PEP": {
@@ -790,7 +790,7 @@
       "price": 137.34,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "PG": {
@@ -798,7 +798,7 @@
       "price": 161.57,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "RKLB": {
@@ -806,7 +806,7 @@
       "price": 54.73,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "SO": {
@@ -814,7 +814,7 @@
       "price": 93.71,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "TMO": {
@@ -822,7 +822,7 @@
       "price": 697,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "TSM": {
@@ -830,7 +830,7 @@
       "price": 406.13,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "UNH": {
@@ -838,7 +838,7 @@
       "price": 406.97,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "UPS": {
@@ -846,7 +846,7 @@
       "price": 108.25,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "V": {
@@ -854,7 +854,7 @@
       "price": 413.59,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "VZ": {
@@ -862,7 +862,7 @@
       "price": 44.73,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "WCN": {
@@ -870,7 +870,7 @@
       "price": 184.08,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "WM": {
@@ -878,7 +878,7 @@
       "price": 233.45,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "WMB": {
@@ -886,7 +886,7 @@
       "price": 74.35,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     },
     "XOM": {
@@ -894,7 +894,7 @@
       "price": 187.25,
       "currency": "USD",
       "source": "auto-us-stock",
-      "priceDate": "2026-11-01",
+      "priceDate": "2026-11-02",
       "memo": "株価 自動取得"
     }
   }
